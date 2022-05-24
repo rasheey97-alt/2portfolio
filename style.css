@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the header */
+
+header{
+  background-image: url(https://wallpapercave.com/wp/wp3284839.gif);
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 50px;
+}
+
+#header p{
+  font-size: 20px;
+}
+
+/* All nav style */
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  height: 20vh;
+  background-color: rgb(3, 0, 41);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+nav a{
+  margin: 15px 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: rgba(214, 221, 255);
+  border: 1px solid rgba(214, 221, 255);
+  font-size: 16px;
+}
+
+nav a:hover{
+  background-color: white;
+  color: rgb(3, 0, 41);
+}
+
+nav a:active{
+  background-color: white;
+  color: rgb(3, 0, 41);
+}
+
+b{
+  color:rgb(77, 77, 219);
+}
+
+hr{
+  border: 3px solid rgb(77, 77, 219);
+  border-radius: 5px;
+  width: 80px;
+}
+
+#contact hr{
+text-align: center;
+}
+
+.flag-icon-gha{
+  width: 15px;
+  height: auto;
+}
+
+.space{
+  height: 10vh;
+}
+p, #contact a{
+  font-size: 1.2rem;
+}
+
+
+/* Grid CSS */
+#left { 
+  height: auto;
+  padding: 25px 0 5px 30px;
+  }
+#right { 
+  height: auto; 
+  padding: 5px 30px 5px 0;
+  /* text-align: center; */
+  }
+
+#about {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 10vw;
+  padding: 30px 20px;
+  align-items: center;
+}
+
+/* Skills bar */
+#right p{
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.html {width: 90%; background-color: rgb(3, 0, 41);}
+.sass {width: 50%; background-color: rgb(3, 0, 41);}
+.js {width: 70%; background-color: rgb(8, 2, 121);}
+.wp {width: 80%; background-color: rgb(8, 2, 121);}
+.ux {width: 90%; background-color: rgb(77, 77, 219);}
+.ui {width: 80%; background-color: rgb(77, 77, 219);}
+
+/* Contact */
+#contact{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 40px 20px;
+  background-color: #ddd;
+}
+#contact h3{
+  margin:20px 0 10px 0;
+}
+
+.socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials a{
+  padding: 5px 0;
+}
+
+.fa{
+  padding-right: 5px;
+}
+/* the footer */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  height: 20vh;
+  background-color: rgb(3, 0, 41);
+  color: white;
+}
+
+/* Adding media queries for responsiveness */
+@media screen and (min-width: 600px) {
+  #about {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10vw;
+  padding: 30px 20px;
+  align-items: center;
+  text-align: left;
+}
+
+
+}
